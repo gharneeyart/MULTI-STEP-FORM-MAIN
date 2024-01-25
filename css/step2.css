@@ -135,6 +135,7 @@ body {
   .btn-container :nth-child(1){
     background-color: transparent;
     color: var(--Coolgray);
+    background: none;
   }
   
   .btn-container{
@@ -217,10 +218,10 @@ body {
        margin-left: 1.5rem;
     }
   
-    .nav-content span {
+    .desktop-only span {
       color: var(--Coolgray);
     }
-    .nav-content h5 {
+    .desktop-only h5 {
       color: var(--White);
     }
     .box{
