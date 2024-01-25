@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    --Marineblue:  hsl(213, 96%, 18%);
+    --Purplishblue: hsl(243, 100%, 62%);
+    --Pastelblue: hsl(228, 100%, 84%);
+    --Lightblue: hsl(206, 94%, 87%);
+    --Strawberryred: hsl(354, 84%, 57%);
+    --Coolgray: hsl(231, 11%, 63%);
+    --Lightgray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+    --para: 16px;
+    --family: "Ubuntu", "Sans-Serif";
+    --fw-semi:400;
+    --fw-bold:500;
+    --fw-xbold:700;
+}
+body{
+    /* max-width: 1440px;
+    min-width: 375px; */
+    font-family:var(--family);
+    background-color: var(--Magnolia);
+    /* height: 70vh; */
+}
+main{
+    background-image: url(../assets/images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    position: relative;
+}
+/* parent takes position relative while what u want to shift takes position absolute */
+/* main div{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 2rem;
+    border:1px solid var(--White);
+} */
+.one,
+.two,
+.three,
+.four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 2rem;
+    border:1px solid var(--White);
+}
+.one{
+    background-color: var(--Lightblue);
+    color: var(--Marineblue);
+}
+/* main div:not(.one):hover{
+    background-color: var(--Lightblue);
+    color: var(--Marineblue);
+} */
+.nav-btn :nth-child(1):hover{
+    background-color:var(--Lightblue) ;
+    color: var(--Marineblue);
+}
+section{
+    position: absolute;
+    top: 17.5%;
+    width: 200px;
+    background-color: var(--White);
+    padding: 10px;
+    border-radius: 10px;
+}
+.form-control{
+    margin-top: 1rem;
+}
+.form-control:focus{
+    box-shadow:none;
+    border: 1px solid var(--Purplishblue);
+    outline: none;
+}
+.top h4, label{
+    color: var(--Marineblue);
+}
+p{
+    color: var(--Coolgray);
+}
+::placeholder{
+    color: var(--Coolgray) !important; 
+}
+.next-btn{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--White);
+    width: 100%;
+   
+}
+.next-btn .btn{
+    right: -60%;
+    position: relative;
+    background-color: var(--Marineblue);
+    color: var(--Lightblue);
+}
+.btn-container{
+    margin-top: 2rem;
+  }
+  .btn-container a{
+    background-color: var(--Marineblue);
+    color: var(--Lightblue);
+    border: none;
+    text-decoration: none;
+  }
+  .btn-container a:hover{
+    background-color: var(--Marineblue);
+    color: var(--Lightblue);
+    opacity: .9;
+  }
+/* media query */
+@media(min-width) and (max-width:900px){
+    section{
+        margin-top: 2rem;
+    }
+}
+@media (min-width: 900px){                                                                                                                  
+    body{
+        width: 100%;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+     .main-container{
+        display: flex;
+        height: 80vh;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        background-color: var(--White);
+        padding: 15px;
+        border-radius: 10px;
+     }
+     main{
+        width: 30% !important;
+        height: 75vh;
+        flex-direction: column;
+        background-image: url(../assets/images/bg-sidebar-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100%;
+        justify-content: flex-start;
+        border-radius: 10px;
+     }
+     main, section{
+        position: static;
+        background-color: var(--White);
+     }
+     section{
+        width: 60% !important;
+        height: 75vh;
+        margin-top: 2.5rem;
+     }
+     .nav-btn{
+        margin-top: 2rem;
+        margin-left: 1rem;
+     }
+     /* main,section, .next-btn, .next-btn .btn{
+        position: static;
+     } */
+     /* .desktop-only span{
+        font-size: 10px;
+        font-weight: 400;
+     }
+     .desktop-only h3{
+        font-size: 12px;
+        font-weight: 500;
+     } */
+     .nav-btn :nth-child(1){
+        margin-top: 0;
+        
+     }
+     .one,
+     .two,
+     .three,
+     .four{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .desktop-only span{
+        color: var(--Alabaster);
+     }
+     .desktop-only h5{
+        color: var(--White);
+     }
+     .next-btn{
+        background: none;
+        margin-bottom: 4.5rem;
+        display: flex;
+        padding-left: 30rem;
+     }
+    
+    }
+     
+     
+
