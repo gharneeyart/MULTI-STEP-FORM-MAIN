@@ -173,14 +173,14 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 80vh;
+      height: 77vh;
       background-color: var(--White);
       padding: 15px;
       border-radius: 10px;
     }
     main {
       width: 30% !important;
-      height: 75vh;
+      height: 70vh;
       flex-direction: column;
       justify-content: flex-start;
       background-image: url("../assets/images/bg-sidebar-desktop.svg");
@@ -190,7 +190,7 @@ body {
     }
     section {
       width: 60% !important;
-      height: 75vh;
+      height: 70vh;
       margin-top: 2.5rem;
     }
     main,
