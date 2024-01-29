@@ -12,7 +12,7 @@
     --Alabaster: hsl(231, 100%, 99%);
     --White: hsl(0, 0%, 100%);
     --para: 16px;
-    --family:"Ubuntu", "Sans-Serif";
+    --family: "Ubuntu","Sans-Serif";
     --fw-semi:400;
     --fw-bold:500;
     --fw-xbold:700;
@@ -55,7 +55,7 @@ body {
     margin-top: 2rem;
     border: 1px solid var(--White);
   }
-  .three{
+  .two {
     background-color: var(--Lightblue);
     color: var(--Marineblue);
   }
@@ -64,72 +64,67 @@ body {
     background-color: var(--Lightblue);
     color: var(--Marineblue);
   }
+  
   section {
     width: 200px;
     position: absolute;
-    top: 17.5%;
+    top: 16.5%;
     background-color: var(--Alabaster);
     padding: 10px;
     border-radius: 10px;
   }
   .box{
-    height: 10vh;
+    height: 11vh;
     display: flex;
     align-items: center;
     /* padding: 10px; */
     border: 1px solid var(--Lightgray);
-    background-color: var(--Magnolia);
     border-radius: 10px;
-    padding: 20px 0 10px 10px;
   }
   .box:hover{
     border: 1px solid var(--Purplishblue);
   }
   .box-content{
-    display: flex;
-    justify-content: space-between ;
-    align-items: center;
+    line-height: 6px;
     color: var(--Coolgray);
   }
-  .content h4{
-    color: var(--Marineblue) ;
+  .box-content h4{
+    color: var(--Marineblue);
+  }
+  .box-content p{
     font-size: 14px;
-    font-weight: var(--fw-bold) ;
   }
-  .content p{
+  .box-content span{
+    color: var(--Purplishblue);
     font-size: 12px;
+    font-weight: var(--fw-bold);
   }
-  .content{
-    line-height: 1px;
-  }
- .sp1{
-    padding-left: 1.7rem;
- }
- .sp2{
-    padding-left: 3.3rem;
- }
- .sp3{
-    padding-left: 1.1rem;
- }
-
  
-  /* .form-check-input{
-    background-color: var(--Marineblue) !important;
-    box-shadow: none;
+ 
+  .lbox, .lbox:hover{
+    height: 8vh;
+    justify-content:space-evenly;
+    background-color: var(--Lightgray) !important;
     border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+  }
+  .form-check-input{
+    background-color: var(--Marineblue) !important;
+    /* box-shadow: none;
+    border: none; */
   }
   .form-check-input, .form-check{
     box-shadow: none;
     border: none;
-  } */
+  }
+  
   
   
   .top h4 {
     color: var(--Marineblue);
-    font-weight: var(--fw-xbold);
-  }
-  .top{
-    color: var(--Coolgray);
   }
   .next-btn {
     width: 100%;
@@ -239,28 +234,13 @@ body {
     .desktop-only h5 {
       color: var(--White);
     }
-    .sp1,
-    .sp2,
-    .sp3{
-        color: var(--Purplishblue);
-    }
-    .sp1{
-        padding-left: 14.3rem;
-     }
-     .sp2{
-        padding-left: 16rem;
-     }
-     .sp3{
-        padding-left: 13.7rem;
-     }
-    /* .box{
+    .box{
         flex-direction: column;
-        width: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-    } */
+        height: 22vh;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10px 0 10px 10px;
+    }
     .box-content h4{
         font-size: 1rem !important;
     }

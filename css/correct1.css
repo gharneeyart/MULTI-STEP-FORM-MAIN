@@ -77,7 +77,7 @@ section{
     border-radius: 10px;
 }
 .form-control{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 .form-control:focus{
     box-shadow:none;
@@ -98,10 +98,11 @@ p{
     bottom: 0;
     background-color: var(--White);
     width: 100%;
+    padding-right: 2rem;
    
 }
 .next-btn .btn{
-    right: -60%;
+    /* right: -60%; */
     position: relative;
     background-color: var(--Marineblue);
     color: var(--Lightblue);
@@ -194,7 +195,7 @@ p{
         align-items: center;
      }
      .desktop-only span{
-        color: var(--Alabaster);
+        color: var(--Coolgray);
      }
      .desktop-only h5{
         color: var(--White);

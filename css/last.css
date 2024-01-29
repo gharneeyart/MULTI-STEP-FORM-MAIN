@@ -55,7 +55,7 @@ body {
     margin-top: 2rem;
     border: 1px solid var(--White);
   }
-  .three{
+  .four{
     background-color: var(--Lightblue);
     color: var(--Marineblue);
   }
@@ -72,102 +72,26 @@ body {
     padding: 10px;
     border-radius: 10px;
   }
-  .box{
-    height: 10vh;
+  .main-section{
+    align-content: center;
+    
+  }
+  .row{
     display: flex;
+    justify-content: center;
     align-items: center;
-    /* padding: 10px; */
-    border: 1px solid var(--Lightgray);
-    background-color: var(--Magnolia);
-    border-radius: 10px;
-    padding: 20px 0 10px 10px;
+    padding: 20px 20px 20px 20px;
   }
-  .box:hover{
-    border: 1px solid var(--Purplishblue);
-  }
-  .box-content{
-    display: flex;
-    justify-content: space-between ;
+  .box-icon{
+    justify-content: center;
     align-items: center;
-    color: var(--Coolgray);
   }
-  .content h4{
-    color: var(--Marineblue) ;
-    font-size: 14px;
-    font-weight: var(--fw-bold) ;
+  .Thanks{
+    justify-content: center;
+    align-items: center;
   }
-  .content p{
-    font-size: 12px;
-  }
-  .content{
-    line-height: 1px;
-  }
- .sp1{
-    padding-left: 1.7rem;
- }
- .sp2{
-    padding-left: 3.3rem;
- }
- .sp3{
-    padding-left: 1.1rem;
- }
 
- 
-  /* .form-check-input{
-    background-color: var(--Marineblue) !important;
-    box-shadow: none;
-    border: none;
-  }
-  .form-check-input, .form-check{
-    box-shadow: none;
-    border: none;
-  } */
-  
-  
-  .top h4 {
-    color: var(--Marineblue);
-    font-weight: var(--fw-xbold);
-  }
-  .top{
-    color: var(--Coolgray);
-  }
-  .next-btn {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: var(--White);
-  }
-  .next-btn .btn {
-    /* right: -60%; */
-    position: relative;
-    background-color: var(--Marineblue);
-    color: var(--Lightblue);
-  }
-  .next-btn :nth-child(1){
-    background-color: transparent;
-    color: var(--Coolgray);
-  }
-  .btn-container :nth-child(1){
-    background-color: transparent;
-    color: var(--Coolgray);
-    background: none;
-  }
-  
-  .btn-container{
-    margin-top: 2rem;
-  }
-  .btn-container a{
-    background-color: var(--Marineblue);
-    color: var(--Lightblue);
-    border: none;
-    text-decoration: none;
-  }
-  .btn-container a:hover{
-    background-color: var(--Marineblue);
-    color: var(--Lightblue);
-    opacity: .9;
-  }
-  /* madia query */
+  /* media query */
   
   @media (min-width: 768px) and (max-width: 900px){
     section{
@@ -239,35 +163,4 @@ body {
     .desktop-only h5 {
       color: var(--White);
     }
-    .sp1,
-    .sp2,
-    .sp3{
-        color: var(--Purplishblue);
-    }
-    .sp1{
-        padding-left: 14.3rem;
-     }
-     .sp2{
-        padding-left: 16rem;
-     }
-     .sp3{
-        padding-left: 13.7rem;
-     }
-    /* .box{
-        flex-direction: column;
-        width: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-    } */
-    .box-content h4{
-        font-size: 1rem !important;
-    }
-    .main-section{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-    
-  }
+}

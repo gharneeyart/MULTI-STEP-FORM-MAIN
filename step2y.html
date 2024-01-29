@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/step3.css">
-
+    <link rel="stylesheet" href="./css/step2y.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-        .attribution { font-size: 11px; text-align: center; }
-        .attribution a { color: hsl(228, 45%, 44%); }
-      </style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
 </head>
 <body>
     <div class="main-container">
@@ -59,61 +60,63 @@
             
              <div action="">
                 <div class="top">
-                    <h4>Pick add-ons</h4>
-                    <p>Add-ons help enhance your gaming experience.</p>
+                    <h4>Select your plan</h4>
+                    <p>You have the option of monthly or yearly billing.</p>
                 </div>
                 
-                <div class="col gap-3  ">
-                    <div class="box col-12 ">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked"></label>
-                          </div>
-                    <div class="box-content ms-2 ms-md-0 d-flex ">
-                        <div class="content"><h4> Online service</h4>
-                            <p>Access to multiplayer games</p></div>
-                            <div class="sp1"><span>+$1/mo</span></div>
+                <div class="row gap-3 gap-md-3 justify-content-md-between">
+                    <div class="box col-12 col-md-3">
+                    <div class="box-icon me-2 me-md-0">
+                        <img src="./assets/images/icon-arcade.svg" alt="">
                     </div>
-                </div>
-                    <div class="box col-12 my-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked"></label>
-                          </div>
-                        <div class="box-content ms-2 ms-md-0">
-                           <div class="content"> <h4>Larger storage</h4>
-                            <p>Extra 1TB of cloud save</p></div>
-                            <div class="sp2"><span>+$2/mo</span></div>
-                        </div> 
-                       
+                    <div class="box-content ms-2 ms-md-0">
+                        <h4>Arcade</h4>
+                        <p>$90/yr</p>
+                        <span>2 months free</span>
                     </div>
-                    <div class="box col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault"></label>
-                          </div>
-                        <div class="box-content ms-2 ms-md-0">
-                           <div class="content"> <h4>Customizable Profile</h4>
-                            <p>Custom theme on your profile</p></div>
-                           <div class="sp3"><span >+$2/mo</span></div>
+                    </div>
+                    <div class="box col-12 col-md-3">
+                        <div class="box-icon me-2 me-md-0">
+                            <img src="./assets/images/icon-advanced.svg" alt="">
                         </div>
-                       
+                        <div class="box-content ms-2 ms-md-0">
+                            <h4>Advanced</h4>
+                            <p>$120/yr</p>
+                            <span>2 months free</span>
+                        </div>
                     </div>
-                    
+                    <div class="box col-12 col-md-3">
+                        <div class="box-icon me-2 me-md-0">
+                            <img src="./assets/images/icon-pro.svg" alt="">
+                        </div>
+                        <div class="box-content ms-2 ms-md-0">
+                            <h4>Pro</h4>
+                            <p>$150/yr</p>
+                            <span>2 months free</span>
+                        </div>
+                    </div>
+                    <div class="lbox col-12">
+                        <span><a href="./step2.html">Monthly</a></span>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                          </div>
+                        <span>Yearly</span>
+                    </div>
 
                 </div>
              </div>
              <div class="btn-container d-none d-md-flex justify-content-between">
-                <a class="btn btn-lg mb-3" href="./step2.html">Go Back</a>
-                <a class="btn btn-lg mb-3" href="./step4.html">Next Step</a>
+                <a class="btn btn-lg mb-3" href="./index.html">Go Back</a>
+                <a class="btn btn-lg mb-3" href="./step3.html">Next Step</a>
               </div>
             </section>
           </div>
           
         
           <div class="next-btn container py-3 d-md-none d-flex justify-content-between">
-            <a class="btn btn-lg mb-3 " href="./step2.html">Go Back</a>
-            <a class="btn btn-lg mb-3" href="./step4.html">Next Step</a>
+            <a class="btn btn-lg mb-3 " href="./index.html">Go Back</a>
+            <a class="btn btn-lg mb-3" href="./step3.html">Next Step</a>
           </div>
+    
 </body>
 </html>
