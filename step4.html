@@ -66,28 +66,35 @@
             <div class="row gap-3  ">
                 <div class="box1 col-12">
                     <div class="box-content ms-2 ms-md-0">
-                       <div class=""><h5>Arcade (Monthly)</h5>
+                       <div><h5><span id="plan"></span> <span id="change"></span></h5>
                         <span><a href="./step2.html">Change</a></span></div>
-                        <div><h5>$9/mo</h5></div>
+                        <div><h5 id="price"></h5></div>
                     </div>
                 </div>
-                <div class="box col-12 ">
-                    <div class="box-content ms-2 ms-md-0">
-                            <p>Online service</p>
-                            <h5>$1/mo</h5>
+                <div class="line col-12"></div>
+                <div class="box col-12" id="service">
+                    <div class="box-content ms-2 ms-md-0" >
+                            <p id="service1"></p>
+                            <h5 id="online"></h5>
+                    </div>
+                </div>
+                <div class="box col-12" id="larger" >
+                        <div class="box-content ms-2 ms-md-0" >
+                            <p id="larger1"></p>
+                            <h5 id="storage"></h5>
                         </div>
                 </div>
-                <div class="box col-12">
-                        <div class="box-content ms-2 ms-md-0">
-                            <p>Larger storage</p>
-                            <h5>$2/mo</h5>
+                <div class="box col-12" id="customize">
+                        <div class="box-content ms-2 ms-md-0"  >
+                            <p id="customize1"></p>
+                            <h5 id="profile"></h5>
                         </div>
                 </div>
             </div>
-            <div class="lbox col-12 ms-2 me-4">
+            <div class="lbox col-12 ms-0 me-4 p-3">
                 
                 <p>Total (per year)</p>
-                <h5>$120/yr</h5>
+                <h5 id="total">$120/yr</h5>
                 
             </div>
              </div>
@@ -103,5 +110,7 @@
             <a class="btn btn-lg mb-3 " href="./step3.html">Go Back</a>
             <a class="btn btn-lg mb-3" href="./last.html">Confirm</a>
           </div>
+
+          <script src="./js/step4.js"></script>
 </body>
 </html>

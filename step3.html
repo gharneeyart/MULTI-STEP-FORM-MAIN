@@ -53,7 +53,7 @@
             <div class="four"><h2>4</h2></div> -->
         </main>
        
-        <section class="main-section col-10 offset-1 offset-md-0 p-3">
+        <section class="main-section col-10 offset-1 offset-md-1 p-3">
             <!-- offset means margin both sides -->
              <!-- form 1 -->
             
@@ -64,38 +64,38 @@
                 </div>
                 
                 <div class="col gap-3  ">
-                    <div class="box col-12 ">
+                    <div class="box col-12" id="forms">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
                             <label class="form-check-label" for="flexCheckChecked"></label>
-                          </div>
-                    <div class="box-content ms-2 ms-md-0 d-flex ">
+                        </div>
+                    <div class="box-content ms-2 ms-md-0 px-3 ">
                         <div class="content"><h4> Online service</h4>
                             <p>Access to multiplayer games</p></div>
-                            <div class="sp1"><span>+$1/mo</span></div>
+                            <div><span id="online"></span></div>
+                        </div>
                     </div>
-                </div>
-                    <div class="box col-12 my-2">
+                    <div class="box col-12 my-2" id="forms1">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
                             <label class="form-check-label" for="flexCheckChecked"></label>
                           </div>
-                        <div class="box-content ms-2 ms-md-0">
+                        <div class="box-content ms-2 ms-md-0 px-3">
                            <div class="content"> <h4>Larger storage</h4>
                             <p>Extra 1TB of cloud save</p></div>
-                            <div class="sp2"><span>+$2/mo</span></div>
+                            <div><span id="storage"></span></div>
                         </div> 
                        
                     </div>
-                    <div class="box col-12">
+                    <div class="box col-12" id="forms2">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
                             <label class="form-check-label" for="flexCheckDefault"></label>
                           </div>
-                        <div class="box-content ms-2 ms-md-0">
+                        <div class="box-content ms-2 ms-md-0 px-3">
                            <div class="content"> <h4>Customizable Profile</h4>
                             <p>Custom theme on your profile</p></div>
-                           <div class="sp3"><span >+$2/mo</span></div>
+                           <div><span id="profile"></span></div>
                         </div>
                        
                     </div>
@@ -104,16 +104,18 @@
                 </div>
              </div>
              <div class="btn-container d-none d-md-flex justify-content-between">
-                <a class="btn btn-lg mb-3" href="./step2.html">Go Back</a>
-                <a class="btn btn-lg mb-3" href="./step4.html">Next Step</a>
+                <a class="btn btn-lg mb-3" href="./step2.html" id="backward1">Go Back</a>
+                <a class="btn btn-lg mb-3" href="./step4.html" id="forward1">Next Step</a>
               </div>
             </section>
           </div>
           
         
           <div class="next-btn container py-3 d-md-none d-flex justify-content-between">
-            <a class="btn btn-lg mb-3 " href="./step2.html">Go Back</a>
-            <a class="btn btn-lg mb-3" href="./step4.html">Next Step</a>
+            <a class="btn btn-lg mb-3 " href="./step2.html" id="backward2">Go Back</a>
+            <a class="btn btn-lg mb-3" href="./step4.html" id="forward2">Next Step</a>
           </div>
+
+          <script src="./js/step3.js"></script>
 </body>
 </html>

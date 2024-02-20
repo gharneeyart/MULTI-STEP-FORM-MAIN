@@ -58,10 +58,10 @@ body {
     color: var(--Marineblue);
   }
   
-  .nav-btn :nth-child(1):hover {
+  /* .nav-btn :nth-child(1):hover {
     background-color: var(--Lightblue);
     color: var(--Marineblue);
-  }
+  } */
   
   section {
     width: 200px;
@@ -72,12 +72,21 @@ body {
     border-radius: 10px;
   }
   .box{
-    height: 10vh;
+    height: 11vh;
     display: flex;
     align-items: center;
     /* padding: 10px; */
     border: 1px solid var(--Lightgray);
     border-radius: 10px;
+    cursor: pointer;
+  }
+  .plan{
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+    border-radius: 10px;
+    cursor: pointer;
   }
   .box:hover{
     border: 1px solid var(--Purplishblue);
@@ -90,6 +99,9 @@ body {
   }
   .box-content {
     color: var(--Coolgray);
+  }
+  .update{
+    color: var(--Purplishblue);
   }
   .lbox, .lbox:hover{
     height: 8vh;
@@ -192,7 +204,7 @@ body {
     section {
       width: 60% !important;
       height: 70vh;
-      margin-top: 2.5rem;
+      /* margin-top: 2.5rem; */
     }
     main,
     section {
@@ -227,10 +239,17 @@ body {
     }
     .box{
         flex-direction: column;
-        height: 20vh;
-        align-items: flex-start;
+        height: 22vh;
+        align-items: flex-start !important;
         justify-content: space-between;
         padding: 10px 0 10px 10px;
+    }
+    .plan{
+      flex-direction: column;
+      height: 22vh;
+      align-items: flex-start!important;
+      justify-content: space-between;
+      padding: 10px 0 10px 10px;
     }
     .box-content h4{
         font-size: 1rem !important;

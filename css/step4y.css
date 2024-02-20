@@ -79,8 +79,7 @@ body {
     
   }
   .box1{
-    border-bottom: 1px solid black;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     padding-top: 1rem;
     line-height: 6px;
   }
@@ -93,6 +92,14 @@ body {
     text-decoration: underline;
     font-size: 10px;
     color: var(--Coolgray) !important;
+  }
+  .line{
+    height: 1px;
+    width: 460px;
+    background-color: var(--Lightgray);
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
   }
   .box p{
 color: var(--Coolgray);
@@ -119,7 +126,7 @@ font-size: 12px;
   .lbox p{
     color: var(--Coolgray);
 font-weight: var(--fw-semi);
-font-size: 10px;
+font-size: 12px;
   }
   .lbox h5{
     color: var(--Purplishblue);
@@ -156,7 +163,7 @@ font-size: 14px;
   }
   
   .btn-container{
-    margin-top: 2rem;
+    margin-top: 1.3rem;
   }
   .btn-container a{
     background-color: var(--Purplishblue);

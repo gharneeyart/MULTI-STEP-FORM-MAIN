@@ -66,45 +66,56 @@
                 
                 <div class="row gap-3 gap-md-3 justify-content-md-between">
                     <div class="box col-12 col-md-3">
-                    <div class="box-icon me-2 me-md-0">
-                        <img src="./assets/images/icon-arcade.svg" alt="">
+                        <a href="" id="arcadeLink" class="plan">
+                            <div class="box-icon me-2 me-md-0">
+                                <img src="./assets/images/icon-arcade.svg" alt="">
+                            </div>
+                            <div class="box-content ms-2 ms-md-0">
+                                <h4>Arcade</h4>
+                                <p id="arcadePrice"></p>
+                                <p class="update" id="arcade"></p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="box-content ms-2 ms-md-0">
-                        <h4>Arcade</h4>
-                        <p>$9/mo</p>
-                    </div>
-                    </div>
-                    <div class="box col-12 col-md-3">
-                        <div class="box-icon me-2 me-md-0">
-                            <img src="./assets/images/icon-advanced.svg" alt="">
+                        <div class="box col-12 col-md-3">
+                            <a href="" id="advancedLink" class="plan">
+                                <div class="box-icon me-2 me-md-0">
+                                    <img src="./assets/images/icon-advanced.svg" alt="">
+                                </div>
+                                <div class="box-content ms-2 ms-md-0">
+                                    <h4>Advanced</h4>
+                                    <p id="advancedPrice"></p>
+                                    <p class="update" id="advanced"></p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="box-content ms-2 ms-md-0">
-                            <h4>Advanced</h4>
-                            <p>$12/mo</p>
+                    
+                    
+                        <div class="box col-12 col-md-3">
+                            <a href="" id="proLink" class="plan">
+                                <div class="box-icon me-2 me-md-0">
+                                    <img src="./assets/images/icon-pro.svg" alt="">
+                                </div>
+                                <div class="box-content ms-2 ms-md-0">
+                                    <h4>Pro</h4>
+                                    <p id="proPrice"></p>
+                                    <p class="update" id="pro"></p>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="box col-12 col-md-3">
-                        <div class="box-icon me-2 me-md-0">
-                            <img src="./assets/images/icon-pro.svg" alt="">
-                        </div>
-                        <div class="box-content ms-2 ms-md-0">
-                            <h4>Pro</h4>
-                            <p>$15/mo</p>
-                        </div>
-                    </div>
+                    
                     <div class="lbox col-12">
-                        <span >Monthly</span>
+                        <span>Monthly</span>
                         <div class="form-check form-switch">
                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-                            <label class="form-check-label" for="flexSwitchCheckChecked"></label>
                           </div>
-                        <span><a href="./step2y.html">Yearly</a></span>
+                        <span>Yearly</span>
                     </div>
 
                 </div>
              </div>
              <div class="btn-container d-none d-md-flex justify-content-between">
-                <a class="btn btn-lg mb-3" href="./index.html">Go Back</a>
+                <a class="btn btn-lg mb-3" href="./index.html" id="goBack">Go Back</a>
                 <a class="btn btn-lg mb-3" href="./step3.html">Next Step</a>
               </div>
             </section>
@@ -112,9 +123,10 @@
           
         
           <div class="next-btn container py-3 d-md-none d-flex justify-content-between">
-            <a class="btn btn-lg mb-3 " href="./index.html">Go Back</a>
+            <a class="btn btn-lg mb-3 " href="./index.html" id="goBack2">Go Back</a>
             <a class="btn btn-lg mb-3" href="./step3.html">Next Step</a>
           </div>
-    
+    <script src="./js/step2.js"></script>
+    <!-- <script src="./js/correct1.js"></script> -->
 </body>
 </html>
