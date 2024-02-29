@@ -7,9 +7,12 @@ const proPrice = document.querySelector("#proPrice");
 const click1 = document.querySelector("#arcadeLink");
 const click2 = document.querySelector("#advancedLink");
 const click3 = document.querySelector("#proLink");
+const box1 = document.querySelector("#box1");
+const box2 = document.querySelector("#box2");
+const box3 = document.querySelector("#box3");
 const toggle = document.querySelector("#flexSwitchCheckChecked");
-const goBack = document.querySelector("#goBack");
-const goBack2 = document.querySelector("#goBack2");
+const forward1 = document.querySelector("#forward1");
+const forward2 = document.querySelector("#forward2");
 
 console.log(toggle);
 
@@ -47,6 +50,32 @@ updatePrice();
 // function to toggle monthly/yearly price
 toggle.addEventListener("change", updatePrice);
 
+// function isFormValid() {
+//     const clicks1 = click1;
+//     const clicks2 = click2;
+//     const clicks3 = click3;
+
+//     return clicks1 || clicks2 || clicks3
+//   }
+// forward1.addEventListener('click', function(event) {
+//     if(!isFormValid()){
+//         event.preventDefault();
+//         box1.style.border = "1px solid red";
+//         box2.style.border = "1px solid red";
+//         box3.style.border = "1px solid red";
+//         return
+//     }
+// });
+// forward2.addEventListener('click', function(event) {
+//     if(!isFormValid()){
+//         event.preventDefault();
+//         box1.style.border = "1px solid red";
+//         box2.style.border = "1px solid red";
+//         box3.style.border = "1px solid red";
+//         // return
+//         return
+//     }
+// });
 
 // goBack.addEventListener('click', function(event) {
 //     const isYearly = toggle.checked

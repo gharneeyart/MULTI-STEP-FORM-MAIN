@@ -3,6 +3,7 @@ const online = document.querySelector("#online")
 const storage = document.querySelector("#storage")
 const profile = document.querySelector("#profile")
 const total = document.querySelector("#total")
+const per = document.querySelector("#per")
 const service = document.querySelector("#service")
 const larger = document.querySelector("#larger")
 const customize = document.querySelector("#customize")
@@ -12,22 +13,8 @@ const customize1 = document.querySelector("#customize1")
 const plan = document.querySelector("#plan")
 const price = document.querySelector("#price")
 
-// const arcade = localStorage.getItem("arcadePlan")
-// console.log(arcade);
-// const advanced = localStorage.getItem("advancedPlan")
-// console.log(advanced);
-// const pro = localStorage.getItem("proPlan")
-// console.log(pro);
-// console.log(plan);
 
 const p = localStorage.getItem("plan")
-
-
-
-
-
-
-
 
 // Retrieve data from local storage
 const data = localStorage.getItem("yearly")
@@ -48,14 +35,14 @@ if(p === "arcade"){
   price.innerHTML = "";
 }
 // selected.innerHTML = click1 ? "$90/yr" : "$9/mo"
-// selected.innerHTML = click2 ? "+10/yr" : "+1/mo"
+// selected.innerHTML = click2 ? "+10/yr" : "+$1/mo"
 // selected.innerHTML = click3 ? "+20/yr" : "+2/mo"
 
-online.innerHTML = isYearly ? "+10/yr" : "+1/mo"
-storage.innerHTML = isYearly ? "+20/yr" : "+2/mo"
-profile.innerHTML = isYearly ? "+20/yr" : "+2/mo"
-// total.innerHTML = isYearly ? "$120/yr" : "$12/mo"
+online.innerHTML = isYearly ? "+$10/yr" : "+$1/mo"
+storage.innerHTML = isYearly ? "+$20/yr" : "+$2/mo"
+profile.innerHTML = isYearly ? "+$20/yr" : "+$2/mo"
 change.innerHTML = isYearly ? "(Yearly)" : "(Monthly)"
+per.innerHTML = isYearly ? "(per year)" : "(per month)"
 
 
 const data1 = localStorage.getItem("checks1")
@@ -83,3 +70,33 @@ if (!checked3) {
   }
 
 
+// Define prices for plans and add-ons
+const planPrices = {
+  arcade: isYearly ? 90 : 9,
+  advanced: isYearly ? 120 : 12,
+  pro: isYearly ? 150 : 15
+};
+
+const addOnPrices = {
+  online: isYearly ? 10 : 1,
+  storage: isYearly ? 20 : 2,
+  profile: isYearly ? 20 : 2
+};
+
+// Calculate total amount
+let totalAmount = planPrices[p];
+
+if (checked1) {
+  totalAmount += addOnPrices.online;
+}
+
+if (checked2) {
+  totalAmount += addOnPrices.storage;
+}
+
+if (checked3) {
+  totalAmount += addOnPrices.profile;
+}
+
+// Display total amount
+total.textContent = isYearly ? `$${totalAmount}/yr` : `$${totalAmount}/mo`;

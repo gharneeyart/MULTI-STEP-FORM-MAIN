@@ -164,7 +164,7 @@ font-size: 14px;
   }
   
   .btn-container{
-    margin-top: 1.3rem;
+    margin-top: 0.1rem;
   }
   .btn-container a{
     background-color: var(--Purplishblue);
@@ -255,7 +255,7 @@ font-size: 14px;
       color: var(--White);
     }
     .row{
-        line-height: 10px;
+        line-height: 1px;
     }
     .line{
       width: 460px;

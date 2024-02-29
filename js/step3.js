@@ -7,10 +7,10 @@ const checked3 = document.querySelector("#flexCheckDefault3");
 const forms = document.querySelector("#forms");
 const forms1 = document.querySelector("#forms1");
 const forms2 = document.querySelector("#forms2");
-const forward1 = document.querySelector("#forward1");
-const forward2 = document.querySelector("#forward2");
-const backward1 = document.querySelector("backward1");
-const backward2 = document.querySelector("backward2");
+// const forward1 = document.querySelector("#forward1");
+// const forward2 = document.querySelector("#forward2");
+// const backward1 = document.querySelector("backward1");
+// const backward2 = document.querySelector("backward2");
 
 
 // Retrieve data from local storage
@@ -18,9 +18,9 @@ const data = localStorage.getItem("yearly")
 const isYearly = JSON.parse(data)
 console.log(isYearly);
 
-online.innerHTML = isYearly ? "+10/yr" : "+1/mo"
-storage.innerHTML = isYearly ? "+20/yr" : "+2/mo"
-profile.innerHTML = isYearly ? "+20/yr" : "+2/mo"
+online.innerHTML = isYearly ? "+$10/yr" : "+$1/mo"
+storage.innerHTML = isYearly ? "+$20/yr" : "+$2/mo"
+profile.innerHTML = isYearly ? "+$20/yr" : "+$2/mo"
 
 function updated1(){
     const isUpdated1 = checked1.checked
@@ -65,23 +65,23 @@ checked2.addEventListener("change", updated2);
 checked3.addEventListener("change", updated3);
 
 
-function isFormValid() {
-    const check1 = checked1.checked;
-    const check2 = checked2.checked;
-    const check3 = checked3.checked;
+// function isFormValid() {
+//     const check1 = checked1.checked;
+//     const check2 = checked2.checked;
+//     const check3 = checked3.checked;
 
-    return check1 || check2 || check3
-  }
+//     return check1 || check2 || check3
+//   }
   
 
-forward1.addEventListener('click', function(event) {
-    if(!isFormValid()){
-        event.preventDefault();
-        forms.style.border = "1px solid red";
-        forms1.style.border = "1px solid red";
-        forms2.style.border = "1px solid red";
-        return
-    }
+// forward1.addEventListener('click', function(event) {
+//     if(!isFormValid()){
+//         event.preventDefault();
+//         forms.style.border = "1px solid red";
+//         forms1.style.border = "1px solid red";
+//         forms2.style.border = "1px solid red";
+//         return
+//     }
     // const check1 = checked1.checked;
     // const check2 = checked2.checked;
     // const check3 = checked3.checked;
@@ -89,16 +89,16 @@ forward1.addEventListener('click', function(event) {
     // localStorage.setItem("one", check1);
     // localStorage.setItem("two", check2);
     // localStorage.setItem("three", check3)
-  })
-forward2.addEventListener('click', function(event) {
-    if(!isFormValid()){
-        event.preventDefault();
-        forms.style.border = "1px solid red";
-        forms1.style.border = "1px solid red";
-        forms2.style.border = "1px solid red";
-        // return
-        return
-    }
+//   })
+// forward2.addEventListener('click', function(event) {
+//     if(!isFormValid()){
+//         event.preventDefault();
+//         forms.style.border = "1px solid red";
+//         forms1.style.border = "1px solid red";
+//         forms2.style.border = "1px solid red";
+//         // return
+//         return
+//     }
 
     // const check1 = checked1.checked;
     // const check2 = checked2.checked;
@@ -107,7 +107,7 @@ forward2.addEventListener('click', function(event) {
     // localStorage.setItem("one", check1);
     // localStorage.setItem("two", check2);
     // localStorage.setItem("three", check3)
-});
+// });
     
 // const data1 = localStorage.getItem("one");
 // console.log(data1);
