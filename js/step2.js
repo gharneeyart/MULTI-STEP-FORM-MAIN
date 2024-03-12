@@ -7,12 +7,12 @@ const proPrice = document.querySelector("#proPrice");
 const click1 = document.querySelector("#arcadeLink");
 const click2 = document.querySelector("#advancedLink");
 const click3 = document.querySelector("#proLink");
-const box1 = document.querySelector("#box1");
-const box2 = document.querySelector("#box2");
-const box3 = document.querySelector("#box3");
+// const box1 = document.querySelector("#box1");
+// const box2 = document.querySelector("#box2");
+// const box3 = document.querySelector("#box3");
 const toggle = document.querySelector("#flexSwitchCheckChecked");
-const forward1 = document.querySelector("#forward1");
-const forward2 = document.querySelector("#forward2");
+// const forward1 = document.querySelector("#forward1");
+// const forward2 = document.querySelector("#forward2");
 
 console.log(toggle);
 
