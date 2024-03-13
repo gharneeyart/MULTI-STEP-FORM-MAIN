@@ -128,7 +128,7 @@ tel.addEventListener("focus", function () {
       phone: phoneValue
     }
 
-    
+    localStorage.setItem("formData", JSON.stringify(formData));
   })
   nextBtn2.addEventListener('click', function(event) {
     if(!isFormValid()){

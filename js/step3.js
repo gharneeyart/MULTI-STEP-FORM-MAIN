@@ -7,11 +7,6 @@ const checked3 = document.querySelector("#flexCheckDefault3");
 const forms = document.querySelector("#forms");
 const forms1 = document.querySelector("#forms1");
 const forms2 = document.querySelector("#forms2");
-// const forward1 = document.querySelector("#forward1");
-// const forward2 = document.querySelector("#forward2");
-// const backward1 = document.querySelector("backward1");
-// const backward2 = document.querySelector("backward2");
-
 
 // Retrieve data from local storage
 const data = localStorage.getItem("yearly")
@@ -63,6 +58,37 @@ updated3();
 checked1.addEventListener("change", updated1);
 checked2.addEventListener("change", updated2);
 checked3.addEventListener("change", updated3);
+
+// checked1.addEventListener("change", function() {
+
+    
+// });
+
+// Function to update border color based on checkbox state
+function updateBorderColor(inputCheckbox, formElement) {
+    if (inputCheckbox.checked) {
+        formElement.style.border = "1px solid blue";
+    } else {
+        formElement.style.border = ""; // Reset border if not checked
+    }
+}
+
+// Event listeners for each checkbox
+checked1.addEventListener("change", function() {
+    updateBorderColor(checked1, forms);
+});
+
+checked2.addEventListener("change", function() {
+    updateBorderColor(checked2, forms1);
+});
+
+checked3.addEventListener("change", function() {
+    updateBorderColor(checked3, forms2);
+});
+
+
+
+
 
 
 // function isFormValid() {
