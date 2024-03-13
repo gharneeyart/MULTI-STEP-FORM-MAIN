@@ -11,7 +11,7 @@
     --Magnolia: hsl(217, 100%, 97%);
     --Alabaster: hsl(231, 100%, 99%);
     --White: hsl(0, 0%, 100%);
-    --para: 16px;
+    --para: 1rem;;
     --family:"Ubuntu", "Sans-Serif";
     --fw-semi:400;
     --fw-bold:500;
@@ -87,11 +87,11 @@ body {
   .box1 h5{
     color: var(--Marineblue);
     font-weight: var(--fw-xbold);
-    font-size: 14px;
+    font-size: 0.9rem;
   }
   .box1 a{
     text-decoration: underline;
-    font-size: 10px;
+    font-size: 0.63rem;
     color: var(--Coolgray) !important;
   }
   .line{
@@ -105,12 +105,12 @@ body {
   .box p{
 color: var(--Coolgray);
 font-weight: var(--fw-semi);
-font-size: 10px;
+font-size: 0.9rem;
   }
   .box h5{
 color: navy;
 font-weight: var(--fw-bold);
-font-size: 12px;
+font-size: 1rem;
   }
   
   .box-content{
@@ -122,17 +122,17 @@ font-size: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 0.94rem;
   }
   .lbox p{
     color: var(--Coolgray);
 font-weight: var(--fw-semi);
-font-size: 12px;
+font-size: 0.75rem;
   }
   .lbox h5{
     color: var(--Purplishblue);
 font-weight: var(--fw-xbold);
-font-size: 14px;
+font-size: 0.9rem;
   }
   .top h4 {
     color: var(--Marineblue);

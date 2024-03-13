@@ -11,7 +11,7 @@
     --Magnolia: hsl(217, 100%, 97%);
     --Alabaster: hsl(231, 100%, 99%);
     --White: hsl(0, 0%, 100%);
-    --para: 16px;
+    --para: 1rem;
     --family: "Ubuntu", "Sans-Serif";
     --fw-semi:400;
     --fw-bold:500;
@@ -99,7 +99,7 @@ p{
 }
 .error{
     color: var(--Strawberryred);
-    font-size: 12px;
+    font-size: 0.75rem;
     /* font-weight: var(--fw-xbold);
     display: none; */
 }
@@ -152,7 +152,7 @@ p{
         align-items: center;
         width: 70%;
         background-color: var(--White);
-        padding: 15px;
+        padding: 0.94rem;
         border-radius: 10px;
      }
      main{

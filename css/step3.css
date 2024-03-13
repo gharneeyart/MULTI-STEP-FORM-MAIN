@@ -48,9 +48,9 @@ body {
     justify-content: center;
     align-items: center;
     color: var(--White);
-    width: 50px;
-    height: 50px;
-    padding: 10px;
+    width: 3.13rem;
+    height: 3.13rem;
+    padding: 0.7rem;
     border-radius: 50%;
     margin-top: 2rem;
     border: 1px solid var(--White);
@@ -65,12 +65,12 @@ body {
     color: var(--Marineblue);
   } */
   section {
-    width: 200px;
+    width: 12.5rem;
     position: absolute;
     top: 17.5%;
     background-color: var(--Alabaster);
-    padding: 10px;
-    border-radius: 10px;
+    padding: 0.7rem;
+    border-radius: 0.7rem;
   }
   .box{
     height: 10vh;
@@ -94,11 +94,11 @@ body {
   }
   .content h4{
     color: var(--Marineblue) ;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: var(--fw-bold) ;
   }
   .content p{
-    font-size: 12px;
+    font-size: 0.7rem;
   }
   .content{
     line-height: 1px;
@@ -183,7 +183,7 @@ body {
       align-items: center;
       height: 77vh;
       background-color: var(--White);
-      padding: 15px;
+      padding: 0.94rem;
       border-radius: 10px;
     }
     main {
