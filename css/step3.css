@@ -106,15 +106,12 @@ body {
   }
 
  
-  /* .form-check-input{
-    background-color: var(--Marineblue) !important;
-    box-shadow: none;
-    border: none;
+  .form-check-input{
+    background-color: var(--Alabaster);
+    box-shadow: none !important;
+  
   }
-  .form-check-input, .form-check{
-    box-shadow: none;
-    border: none;
-  } */
+  
   
   
   .top h4 {
@@ -136,7 +133,7 @@ body {
     background-color: var(--Marineblue);
     color: var(--Lightblue);
   }
-  .next-btn :nth-child(1){
+  /* .next-btn :nth-child(1){
     background-color: transparent;
     color: var(--Coolgray);
   }
@@ -144,21 +141,29 @@ body {
     background-color: transparent;
     color: var(--Coolgray);
     background: none;
-  }
+  } */
   
   .btn-container{
     margin-top: 2rem;
   }
-  .btn-container a{
+  #nextstep{
     background-color: var(--Marineblue);
     color: var(--Lightblue);
     border: none;
     text-decoration: none;
   }
-  .btn-container a:hover{
+  #nextstep:hover{
     background-color: var(--Marineblue);
     color: var(--Lightblue);
     opacity: .9;
+  }
+  #goback{
+    background: none;
+    color: gray;
+  }
+  #goback:hover{
+    color: var(--Marineblue);
+    background: none !important;
   }
   /* madia query */
   

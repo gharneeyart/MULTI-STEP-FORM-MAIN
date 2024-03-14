@@ -132,9 +132,9 @@ p{
     opacity: .9;
   }
 /* media query */
-@media(min-width) and (max-width:900px){
+@media(min-width:768px) and (max-width:900px){
     section{
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 }
 @media (min-width: 900px){                                                                                                                  

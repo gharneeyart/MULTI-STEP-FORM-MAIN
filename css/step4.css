@@ -105,12 +105,12 @@ body {
   .box p{
 color: var(--Coolgray);
 font-weight: var(--fw-semi);
-font-size: 0.9rem;
+font-size: 0.7rem;
   }
   .box h5{
 color: navy;
 font-weight: var(--fw-bold);
-font-size: 1rem;
+font-size: 0.8rem;
   }
   
   .box-content{
@@ -122,12 +122,12 @@ font-size: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0.94rem;
+    padding-top: 0.9rem;
   }
   .lbox p{
     color: var(--Coolgray);
 font-weight: var(--fw-semi);
-font-size: 0.75rem;
+font-size: 0.8rem;
   }
   .lbox h5{
     color: var(--Purplishblue);
@@ -173,13 +173,33 @@ font-size: 0.9rem;
     text-decoration: none;
   }
   .btn-container a:hover{
-    background-color: var(--Marineblue);
+    background-color: var(--Pastelblue);
     color: var(--Lightblue);
     opacity: .9;
   }
   a{
     text-decoration: none;
     color: var(--Coolgray);
+  }
+  #nextstep{
+    background-color: var(--Purplishblue);
+    color: var(--Alabaster);
+    border: none;
+    text-decoration: none;
+  }
+  #nextstep:hover{
+    background-color: var(--Purplishblue);
+    color: var(--Alabaster);
+    opacity: .9;
+  }
+  #goback{
+    background: none;
+    color: gray;
+    font-size: 1rem !important;
+  }
+  #goback:hover{
+    color: var(--Marineblue);
+    background: none !important;
   }
 
    /* madia query */

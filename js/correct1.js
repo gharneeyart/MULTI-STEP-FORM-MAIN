@@ -17,15 +17,27 @@ console.log(tel);
 // nameInput, nameError
 nameInput.addEventListener("focus", function(){
     nameInput.style.border = "1px solid red";
+    const nameValue = nameInput.value.trim();
+    const nameRegex = /^[a-zA-Z-]*$/i
+    if (nameValue.length >= 3 && nameRegex.test(nameValue)) {
+      nameInput.style.border = "1px solid blue";
+    }
+    else{
+      nameInput.style.border = "1px solid red";
+    }
 })
 nameInput.addEventListener("input", function(){
+    const nameRegex = /^[a-zA-Z-]*$/i
     const inputValue = nameInput.value.trim();
-    if(inputValue.length >= 3){
+    if(inputValue.length >= 3 && nameRegex.test(inputValue)){
         nameInput.style.border = "1px solid blue";
         nameError.innerHTML = ""
     }else if(inputValue.length === 0) {
         nameInput.style.border = "1px solid red";
         nameError.innerHTML = "This field is required"
+    }else if( nameRegex.test(inputValue)) {
+        nameInput.style.border = "1px solid red";
+        nameError.innerHTML = "Enter a valid name"
     }else{
         nameInput.style.border = "1px solid red";
     } 
@@ -37,6 +49,16 @@ nameInput.addEventListener("blur", function(){
 // emailInput, emailError
 email.addEventListener("focus", function(){
     email.style.border = "1px solid red";
+
+    const emailValue = email.value.trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (emailValue.length >= 6 && emailRegex.test(emailValue)) {
+        email.style.border = "1px solid blue";
+        emailError.textContent = "";
+      }else {
+        email.style.border = "1px solid red";
+        emailError.innerHTML = "Invalid email format";
+      }
 })
 
 email.addEventListener("blur", function () {
