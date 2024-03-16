@@ -57,7 +57,7 @@ email.addEventListener("focus", function(){
         emailError.textContent = "";
       }else {
         email.style.border = "1px solid red";
-        emailError.innerHTML = "Invalid email format";
+        emailError.innerHTML = "";
       }
 })
 

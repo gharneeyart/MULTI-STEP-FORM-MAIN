@@ -107,13 +107,47 @@ function isAnyBoxSelected() {
 forward1.addEventListener("click", function(event) {
     if (!isAnyBoxSelected()) {
         event.preventDefault();
-        alert("Please select a plan before proceeding.");
+        Toastify({
+            text: "Please select a plan before proceeding.",
+            duration: 3000, // 3 seconds
+            close: true,
+            gravity: "top", // Display at the top of the page
+            position: "center", // Centered horizontally
+            backgroundColor: "linear-gradient(to right, #4f86ed, #1e467d)",
+            stopOnFocus: true ,// Stop timeout when hovered over
+            // className: "toastify-custom", // Custom class for styling
+            // style: {
+            //     fontSize: "20px", // Increase font size
+            //     padding: "10px", // Increase padding
+            //     boxShadow: "0 4px 8px rgba(0,0,0,0.1)", // Add box shadow
+            //     border: "none", // Remove border
+            //     maxWidth: "500px", /* Limit width */
+            //     textAlign: "start" /* Center text */
+            // }
+            }).showToast();
     }
 });
 forward2.addEventListener("click", function(event) {
     if (!isAnyBoxSelected()) {
         event.preventDefault();
-        alert("Please select a plan before proceeding.");
+        Toastify({
+            text: "Please select a plan before proceeding.",
+            duration: 5000, // 3 seconds
+            close: true,
+            gravity: "top", // Display at the top of the page
+            position: "center", // Centered horizontally
+            backgroundColor: "linear-gradient(to right, #4f86ed, #1e467d)",
+            stopOnFocus: true, // Stop timeout when hovered over
+            // className: "toastify-custom", // Custom class for styling
+            // style: {
+            //     fontSize: "20px", // Increase font size
+            //     padding: "20px", // Increase padding
+            //     boxShadow: "0 4px 8px rgba(0,0,0,0.1)", // Add box shadow
+            //     border: "none", // Remove border
+            //     maxWidth: "400px", /* Limit width */
+            //     textAlign: "center" /* Center text */
+            // }
+            }).showToast();
     }
 });
 
